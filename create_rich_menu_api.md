@@ -5,29 +5,51 @@ curl -v -X POST https://api.line.me/v2/bot/richmenu \
 '{
   "size": {
     "width": 2500,
-    "height": 1686
+    "height": 835
    },
    "selected": true,
    "name": "Rich menu v1.0",
-   "chatBarText": "Tap here",
+   "chatBarText": "お問い合わせ",
    "areas": [
     {
       "bounds": {
         "x": 0,
         "y": 0,
-        "width": 2500,
-        "height": 1686
+        "width": 834,
+        "height": 835
       },
       "action": {
         "type": "datetimepicker",
-        "label":"Select date",
         "data":"storeId=12345",
         "mode":"date"
       }
-    }
+    },
+    {
+      "bounds": {
+        "x": 834,
+        "y": 0,
+        "width": 833,
+        "height": 835
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://paperlink.jp/"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1667,
+        "y": 0,
+        "width": 833,
+        "height": 835
+      },
+      "action": {
+        "type": "uri",
+        "uri": "https://paperlink.jp/"
+      }
+    },
   ]
 }'
-
 
 ## response
 
